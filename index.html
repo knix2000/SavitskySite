@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Savitsky Planing Hull</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+	<pre id="boatData">
+		
+	</pre>
+	<button id="calculate_button">Calculate</button>
+	<script type="text/javascript">
+		/*var x, y, z;
+		x = 1;
+		y = 2;
+		z = x + y;
+		alert("z is " + z);*/
+		
+		let g=9.81;
+		let rho=1025;
+		let nu=1.004e-6;
+		let beta=10 //grader
+		let V=40*1852/3600;
+		let b=14*0.3048;
+		let depl=60000*0.453592*g; // i N
+		let LCG=29*0.3048;
+		let VCG=2*0.3048;
+		let epsilon = 4;
+		let f=0.5*0.3048;
+		
+		document.getElementById("boatData").textContent="g="+g +"\n" + 
+		"rho="+rho +"\n" + 
+		"nu="+nu +"\n" + 
+		"beta="+beta +"\n" + 
+		"V="+V +"\n" + 
+		"b="+b +"\n" + 
+		"depl="+depl +"\n" + 
+		"LCG="+LCG +"\n" + 
+		"VCG="+VCG +"\n" + 
+		"epsilon="+epsilon +"\n" + 
+		"f="+f +"\n";
+		
+		let calculateButton=document.getElementById('calculateButton');
+		
+		calculateButton.onclick=calculate;
+		alert("yoyoyo");
+		
+		function calculate(event)
+		{
+			alert("yoyoyo");
+		}
+		
+	</script>
+	
+	<script 
+	onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+  </body>
+</html>
